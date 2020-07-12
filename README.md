@@ -7,7 +7,7 @@ personal project done in Pygame, Pygame is a set of Python modules designed for 
 https://www.pygame.org
 
 
-#Installation
+# Installation
 
 pip install pygame
 
