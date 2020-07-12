@@ -1,8 +1,5 @@
 import pygame
 
-
-
-
 NEGRO      =   (   0,   0,   0)
 BLANCO     =   ( 255, 255, 255)
 VERDE      =   (   0, 255,  0)
@@ -15,18 +12,10 @@ VERDEPASTO   = (  22,189,4  )
 VIOLETA   =    ( 98 ,  0,255)
 pygame.init()
 
-
-
-
-
-
 tamano = (800, 900)
 pantalla = pygame.display.set_mode(tamano)
 
 pygame.display.set_caption("Mi dibujo")
-
-
-
 
 terminar = False
 
@@ -84,14 +73,10 @@ while not terminar:
     pygame.draw.rect(pantalla, MARRON , [80,180,500,600])
     for pelomoviendoce in range(0,520,20):
         pygame.draw.line(pantalla, MARRONCLARO, [80+pelomoviendoce,180], [80+pelomoviendoce,780], 6)#cabellos
-        
+  
     pygame.draw.polygon(pantalla,ROJO,[[330,0],[582,180],[77,180]]) 
-    
     pygame.draw.rect(pantalla, MARRON, [135,270,130,150],16)
-    pygame.draw.rect(pantalla, BLANCO, [135,270,130,150]) 
-    
-    
-           
+    pygame.draw.rect(pantalla, BLANCO, [135,270,130,150])   
     pygame.draw.rect(pantalla, MARRON, [380,270,130,150],16 )
     pygame.draw.rect(pantalla,BLANCO , [380,270,130,150])
     if tiemposemaforo < 15:
@@ -112,7 +97,7 @@ while not terminar:
     for repeticion in range (0,750,30):
         pcirculox = (10 + movete_oja  ) + repeticion
         pcirculoy = 800 + altura        
-        
+    
         pygame.draw.line(pantalla, VERDE , [pcirculox , pcirculoy  ], [50 + repeticion ,850], 5) 
         pygame.draw.ellipse(pantalla,VIOLETA,[pcirculox -10 ,  pcirculoy -10 ,20,20])   
     
