@@ -9,7 +9,7 @@ https://www.pygame.org
 
 # Installation
 
-pip install pygame
+$pip install pygame
 
 You should definitely begin by installing a binary package for your system. The binary packages usually come with or give the information needed for dependencies. Choose an appropriate installer for your system and version of Python from the pygame downloads page. https://www.pygame.org/download.shtml
 
